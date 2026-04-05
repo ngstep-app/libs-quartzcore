@@ -38,14 +38,15 @@
 #if GNUSTEP
 #import <CoreGraphics/CoreGraphics.h>
 #endif
-#if (__APPLE__)
 #define GL_GLEXT_PROTOTYPES 1
+#if (__APPLE__)
 #import <OpenGL/OpenGL.h>
 #import <OpenGL/gl.h>
 #import <OpenGL/glu.h>
 #else
 #import <GL/gl.h>
 #import <GL/glu.h>
+#import <GL/glext.h>
 #endif
 
 @class CAGLTexture;
